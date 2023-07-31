@@ -1,0 +1,318 @@
+@use "../../../shared/commonStyles/colors.scss" as colors;
+
+.homeWrapper {
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.home-Section1 {
+  background-color: colors.$blue1;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1.5rem 0 0 0;
+}
+
+.resourceTypeDropdownWrap {
+  margin-right: 133px;
+}
+
+.home-Header {
+  color: colors.$white1;
+  padding: 0 1rem;
+}
+
+.home-Section2 {
+  width: 95%;
+  margin: auto;
+}
+
+.home-ContentBody {
+  width: 100%;
+  height: calc(100vh - 98px);
+  overflow-y: auto;
+}
+
+.horizontalLine {
+  bottom: 9px;
+  position: relative;
+  z-index: 1;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.hrlinewrapper {
+  margin-top: 34px;
+}
+
+.hrlinewrapper-OR {
+  margin-top: 18px;
+}
+
+.section1GridItems {
+  padding-top: 5px !important;
+}
+
+.optional-text {
+  background: colors.$white1;
+  position: relative;
+  z-index: 10;
+  margin-top: 10px;
+  font-family: "Inter";
+  padding-left: 1rem;
+  margin-left: 47%;
+  width: 94px;
+}
+
+.optional-section {
+  padding-top: 10px !important;
+}
+
+.home_LabelName {
+  font-size: 16px !important;
+  line-height: 24px !important;
+  padding-bottom: 8px !important;
+  color: colors.$black;
+  outline: none;
+  display: inline-block;
+}
+
+.home-tooltips {
+  display: inline-block;
+  width: auto;
+}
+
+.home_LabelName {
+  font-family: "Poppins";
+  font-size: 16px;
+  line-height: 24px;
+  // padding-top: 20px;
+  padding-bottom: 8px;
+  color: colors.$black;
+  outline: none;
+  display: flex;
+  align-items: center;
+  margin-top: 33px !important;
+    margin-bottom: 41px !important;
+}
+
+.uploadText1 {
+  @extend .home_LabelName;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.uploadText2 {
+  font-family: "Poppins";
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 8px;
+    color: #212121;
+    outline: none;
+    display: flex;
+    align-items: center;
+}
+
+.uploadText3 {
+  font-family: "Poppins";
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 8px;
+    color: #212121;
+    outline: none;
+    display: flex;
+    align-items: center;
+    width: 21%;
+}
+
+.fileNameTemporary {
+  color: red !important;
+}
+
+.textAreas-2-and-4 {
+  margin-left: 40px !important;
+}
+
+.fileOrUrlicon {
+  width: 18px;
+}
+
+.addURLTextBox {
+  width: 53%;
+  margin-left: 10px !important;
+}
+
+.home_LabelName svg,
+.home_LabelName--firstLebel svg {
+  width: auto;
+  margin: 0 0.4rem;
+}
+
+.home_LabelName span,
+.home_LabelName--firstLebel span {
+  color: colors.$grey;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+
+.fileDropBox {
+  width: 53% !important;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+}
+
+.addFile {
+  margin-left: 155px;
+}
+
+.home_generate_btn {
+  width: 90%;
+  margin-top: 10px !important;
+  margin-left: 59px !important;
+  margin: 1rem 0;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.Add-Files-or-links-Box {
+  display: flex;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.addURL-text {
+  @extend .home_LabelName;
+  margin-top: 10px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 4px;
+}
+
+.progressBar {
+  padding-left: 28px;
+}
+
+.uploadSuccessTick {
+  width: 23%;
+}
+
+.addedContentBoxhome {
+  width: 100%;
+  overflow-y: auto;
+  margin-top: 0.6rem;
+  margin-top: 80px;
+}
+
+.addedContentBoxhome div {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.addedContentBoxhome > div:nth-child(odd) {
+  background-color: colors.$lightBlue;
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border-radius: 0.3rem;
+}
+
+.addedContentBoxhome > div:nth-child(even) {
+  background-color: colors.$white1;
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border-radius: 0.3rem;
+}
+
+.urlInputBox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.removeUrlIcon {
+  cursor: pointer;
+  margin-left: 15px !important;
+}
+
+.homeDropdowns {
+  width: 80%;
+}
+
+.home_LabelName {
+  font-family: "Poppins";
+  font-size: 16px;
+  line-height: 24px;
+  padding-top: 20px;
+  padding-bottom: 8px;
+  color: colors.$black;
+  outline: none;
+  display: flex;
+  align-items: center;
+}
+
+.fileProgressBarContainer {
+  .fileDataText {
+    font-size: 12px;
+    line-height: 15px;
+    color: colors.$black;
+    opacity: 0.6;
+  }
+
+  .emptyProgressBar {
+    background: colors.$textfieldborder;
+    border-radius: 100px;
+    display: block;
+    height: 5px;
+    width: 100%;
+
+    .fillProgressBar {
+      width: 0;
+      height: inherit;
+      border-radius: inherit;
+      background-color: colors.$blue1;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+}
+
+.invalidLabel {
+  font-family: "Poppins";
+  font-size: 14px;
+  color: colors.$red1;
+  outline: none;
+}
+
+.dragDrop {
+  display: flex;
+  align-items: center;
+
+  svg {
+    width: 25px;
+    margin-right: 0.5rem;
+  }
+}
+
+.removeSpacingWrapper {
+  margin-top: 0 !important;
+
+  .removeSpacing {
+    padding-top: 0 !important;
+  }
+}
+
+.removeSpacingWrapper1 {
+  margin-top: 0 !important;
+
+  .removeSpacing {
+    padding-top: 0 !important;
+  }
+  display: flex;
+    justify-content: end;
+
+}

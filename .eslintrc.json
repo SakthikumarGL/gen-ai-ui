@@ -1,0 +1,48 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "airbnb",
+        "prettier"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react","prettier"
+    ],
+    "rules": {
+        "no-console": "error", //error/off/warn
+        "no-debugger": "warn",
+        "no-nested-ternary": "off",
+        "no-use-before-define": "warn",
+        "react/function-component-definition": "off",
+        "react/jsx-fragments": "off",
+        "react/jsx-filename-extension": "off",
+        "import/no-extraneous-dependencies": "off",
+        "import/prefer-default-export": "off",
+        "react/require-default-props": "off",
+        "no-tabs": "off",
+        "timport/prefer-default-export": "off",
+        "import/no-unresolved": "off",
+        "import/no-named-as-default-member": "off",        
+        "react/jsx-props-no-spreading": "off",
+        "import/extensions": "off",
+        "prettier/prettier": [
+            "error",
+            { "singleQuote": true, "parser": "flow", "endOfLine": "auto", "tabWidth": 2 }
+        ],
+        "react/jsx-indent": "off",
+        "react/prop-types": "off",
+        "react/destructuring-assignment": "warn",
+        "no-irregular-whitespace": "off",
+        "react/self-closing-comp": "off",
+        "react/no-unstable-nested-components": "off"
+    }
+}

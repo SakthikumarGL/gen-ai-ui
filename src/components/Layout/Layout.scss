@@ -1,0 +1,128 @@
+@use "../../shared/commonStyles/colors.scss" as colors;
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding-top: 50px;
+  overflow: hidden;
+}
+
+/* Custom Scroll Bar CSS */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
+}
+/* Custom Scroll Bar CSS */
+
+svg,
+img {
+  width: 100%;
+}
+
+.pageHeaderInfoBox {
+  margin: 32px 0 32px;
+}
+
+.pageheadertext {
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: -0.02em;
+  color: #151515;
+  padding-bottom: 4px;
+}
+
+.pagesubheadertext {
+  font-size: 16px;
+  line-height: 19px;
+  color: #212121;
+}
+
+.analyzeButton {
+  max-width: 108px;
+  height: auto !important;
+  max-height: inherit !important;
+  button {
+    min-width: 100%;
+  }
+  .inputClear {
+    max-width: 12px;
+    min-width: 12px;
+    padding: 0;
+    position: absolute;
+    right: 110px;
+  }
+}
+
+.analyseUrlResponseDesription {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: colors.$black;
+  padding: 13px 16px;
+  border: 1px solid colors.$brown;
+  border-radius: 4px;
+  min-height: 114px;
+}
+
+.urlFlowContainer {
+  margin-bottom: 36px;
+  .topicsContinue {
+    margin-top: 24px;
+  }
+}
+
+.mandatoryMark {
+  color: #dd000e;
+  font-style: normal;
+}
+
+.toolTip {
+  margin-left: 13px;
+  max-width: 14px;
+  max-height: 14px;
+}
+
+.labelOutside {
+  margin-right: 25px;
+}
+
+#freeUserAlert {
+  .MuiDialog-paper {
+    max-width: min-content;
+  }
+
+  .alertPopUpBody {
+    padding-top: 20px;
+  }
+}
+
+.MuiTooltip-tooltip {
+  font-size: 14px !important;
+}
+
+.boxInfo {
+  width: auto;
+  vertical-align: middle;
+  margin: 0 8px;
+}

@@ -1,0 +1,15 @@
+@use "../../../commonStyles/colors.scss" as colors;
+
+#textBoxMedium {
+  height: 40px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  border: 1px solid colors.$textfieldborder;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  &:hover,
+  &:focus {
+    border: 1px solid colors.$textfieldborderactive;
+    outline-color: colors.$textfieldborderactive;
+  }
+}
